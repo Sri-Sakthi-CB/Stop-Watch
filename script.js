@@ -7,7 +7,7 @@
  function start(){
     if(!isRunning){
     startTime = Date.now() - elapsedTime;
-    timer = setinterval(update, 10);
+    timer = setInterval(update, 10);
     isRunning = true;
     }
  }
@@ -17,7 +17,7 @@
         if(isRunning)
         {
             clearInterval(timer);
-            elapsedTime = date.now() - startTime;
+            elapsedTime = Date.now() - startTime;
             isRunning = false;
         }
  }
